@@ -2,8 +2,6 @@
 
 A powerful, privacy-focused web application that converts images to text using OCR technology. Built and maintained by [Good Heart Tech](https://goodhearttech.org/), a nonprofit dedicated to supporting other nonprofit organizations with accessible, technology-driven solutions.
 
-[![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy%20to%20Cloudflare%20Pages-blue)](https://pages.cloudflare.com)
-
 ## 🚀 Start Converting
 Visit (https://ocr.nonprofittools.org/) to use  the application and start converting tmages to text.
 
@@ -25,6 +23,8 @@ Visit (https://ocr.nonprofittools.org/) to use  the application and start conver
 - Modern, user-friendly interface
 
 ## 🚀 Deployment Guide
+
+[![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy%20to%20Cloudflare%20Pages-blue)](https://pages.cloudflare.com)
 
 1. **Fork the Repository**
    - Click the "Fork" button in the top-right corner of this repository
@@ -54,4 +54,4 @@ Good Heart Tech is a nonprofit dedicated to supporting other nonprofit organizat
 [![Donate](https://img.shields.io/badge/Donate%20to%20Good%20Heart%20Tech-red)](https://goodhearttech.org/donate/)
 
 ## ⚠️ Disclaimer
-The Image to Text Converter is provided for informational purposes only. While we strive for accuracy, the OCR results may vary depending on image quality and content. The tool processes all data locally within your browser - no data is transmitted to our servers. However, we make no guarantees regarding the accuracy, reliability, or availability of the service. Use this tool at your own discretion and risk. We are not responsible for any consequences arising from the use or misuse of this application. 
+This tool is provided for informational purposes only. While we strive for accuracy, the OCR results may vary depending on image quality and content. The tool processes all data locally within your browser - no data is transmitted to our systems. However, we make no guarantees regarding the accuracy, reliability, or availability of the service. Use this tool at your own discretion and risk. We are not responsible for any consequences arising from the use or misuse of this application. 
