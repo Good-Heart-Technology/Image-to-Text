@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to Text</title>
+    <link rel="icon" type="image/svg+xml" href="https://graphics.goodhearttech.org/GHT/favicons/favicon.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Image to Text</h1>
+            <p class="subtitle">Convert your images to editable text using OCR technology</p>
+            <p class="security-message">
+                <i class="fas fa-shield-alt"></i>
+                All processing occurs locally within the browser. No queries or results are recorded on our systems.
+            </p>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-area" id="dropZone">
+                    <div class="upload-actions">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag & drop your image here or</p>
+                        <label for="fileInput" class="upload-button">
+                            <i class="fas fa-folder-open"></i> Choose File
+                        </label>
+                    </div>
+                    <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.svg,.gif,.bmp,.tiff,.webp" hidden>
+                    <p class="file-types">Supported formats: JPG, PNG, SVG, GIF, BMP, TIFF, WEBP</p>
+                </div>
+            </div>
+
+            <div class="result-section" id="resultSection" style="display: none;">
+                <div class="text-container">
+                    <div class="text-header">
+                        <h2>Extracted Text</h2>
+                    </div>
+                    <div class="processing-indicator" id="processingIndicator" style="display: none;">
+                        <div class="processing-content">
+                            <div class="processing-spinner"></div>
+                            <p>Processing image...</p>
+                        </div>
+                    </div>
+                    <textarea id="userData" placeholder="Extracted text will appear here..."></textarea>
+                </div>
+                <div class="button-group">
+                    <button id="copyButton" class="copy-button" type="button">
+                        <i class="fas fa-copy"></i> Copy Text
+                    </button>
+                    <button id="downloadButton" class="download-button" type="button">
+                        <i class="fas fa-download"></i> Download Text File
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p class="disclaimer">This tool is for informational use only. Accuracy is not guaranteed, and it may become outdated or stop functioning. Use at your own discretion.</p>
+            <div class="footer-content">
+                <a href="https://goodhearttech.org/" target="_blank" class="footer-logo">
+                    <img src="https://graphics.goodhearttech.org/GHT-AllWhiteLogo-phishsite.png" alt="Good Heart Tech Logo">
+                </a>
+                <p class="copyright">&copy; <span id="currentYear"></span> All rights reserved.</p>
+                <a href="https://goodhearttech.org/donate/" target="_blank" class="donate-button">
+                    <i class="fas fa-heart"></i> Donate
+                </a>
+                <a href="https://github.com/Good-Heart-Technology/Image-to-Text" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/tesseract.js@4.1.1/dist/tesseract.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
