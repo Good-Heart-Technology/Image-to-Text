@@ -3,7 +3,7 @@
 A powerful, privacy-focused web application that converts images to text using OCR technology. Built and maintained by [Good Heart Tech](https://goodhearttech.org/), a nonprofit dedicated to supporting other nonprofit organizations with accessible, technology-driven solutions.
 
 ## 🚀 Start Converting
-Visit (https://ocr.nonprofittools.org/) to use  the application and start converting tmages to text.
+Visit (https://ocr.nonprofittools.org/) to use  the application and start converting images to text.
 
 ## 🛠️ Tech Stack
 - HTML5
