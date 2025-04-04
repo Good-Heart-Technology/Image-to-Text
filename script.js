@@ -10,6 +10,19 @@ const processingIndicator = document.getElementById('processingIndicator');
 // Update copyright year
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
+// Handle clipboard paste events
+document.addEventListener('paste', (e) => {
+    const items = e.clipboardData.items;
+    
+    for (let i = 0; i < items.length; i++) {
+        if (items[i].type.indexOf('image') !== -1) {
+            const blob = items[i].getAsFile();
+            processImage(blob);
+            break;
+        }
+    }
+});
+
 // Drag and drop event handlers
 dropZone.addEventListener('dragover', (e) => {
     e.preventDefault();
